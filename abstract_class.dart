@@ -3,7 +3,7 @@
 abstract class Empleado {
   var id;
   var nombre;
-  double salario;
+  double salario = 0.0;
 
   void calcularSalario() {
     print("El salario del empleado es ${salario * 5.5}");
@@ -19,7 +19,7 @@ class Chofer {
 }
 
 class Cajero extends Empleado {
-  String cajaAsignada;
+  String cajaAsignada = '';
 
   void cobrar() {
     print("Estoy cobrando");

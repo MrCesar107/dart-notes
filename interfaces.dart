@@ -3,7 +3,7 @@
 class Empleado {
   var id;
   var nombre;
-  double salario;
+  double salario = 0.0;
 
   void calcularSalario() {
     print('Salario del empleado es ${salario * 5.5}');
